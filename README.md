@@ -1,35 +1,24 @@
-Object-Oriented Programming (OOP) Labs
-This repository contains a series of laboratory works designed for learning the fundamentals of Object-Oriented Programming using C#.
+# Object-Oriented Programming (OOP) Labs
 
-📚 Table of Contents
-About
+This repository contains a series of laboratory works designed for learning the fundamentals of Object-Oriented Programming using **C#**.
 
-Objectives
+## 📚 Table of Contents
+* [About](#about)
+* [Objectives](#objectives)
+* [Structure](#structure)
+* [Getting Started](#getting-started)
+  * [Prerequisites](#prerequisites)
+  * [Installation \& Running](#installation--running)
+* [List of Labs](#list-of-labs)
+* [Submission Rules](#submission-rules)
+* [License](#license)
 
-Structure
+## About
+This repository is created for university students taking an "Object-Oriented Programming" course. The assignments progress from basic to advanced topics, allowing students to practice key OOP principles using C#.
 
-Getting Started
-
-Prerequisites
-
-Installation & Running
-
-List of Labs
-
-Submission Rules
-
-License
-
-About
-This repository is created for university students taking an "Object-Oriented Programming" course. The assignments progress from basic to advanced topics, allowing students to practice key OOP principles.
-
-Objectives
-Master the principles of Encapsulation, Inheritance, and Polymorphism.
-
-Develop skills in creating class hierarchies and UML diagrams.
-
-Implement and handle exceptions.
-
-Utilize templates (generics) and standard containers.
-
-Get introduced to basic design patterns.
+## Objectives
+* Master the principles of **Encapsulation**, **Inheritance**, and **Polymorphism**
+* Develop skills in creating class hierarchies and UML diagrams
+* Implement and handle exceptions properly
+* Utilize generics and standard collections (`List<T>`, `Dictionary<TKey, TValue>`, etc.)
+* Get introduced to basic design patterns
