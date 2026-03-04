@@ -5,13 +5,8 @@ This repository contains a series of laboratory works designed for learning the 
 ## 📚 Table of Contents
 * [About](#about)
 * [Objectives](#objectives)
-* [Structure](#structure)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation \& Running](#installation--running)
 * [List of Labs](#list-of-labs)
-* [Submission Rules](#submission-rules)
-* [License](#license)
+
 
 ## About
 This repository is created for university students taking an "Object-Oriented Programming" course. The assignments progress from basic to advanced topics, allowing students to practice key OOP principles using C#.
