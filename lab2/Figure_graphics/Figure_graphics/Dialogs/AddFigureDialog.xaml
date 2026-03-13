@@ -1,0 +1,60 @@
+<Window x:Class="Figure_graphics.Dialogs.AddFigureDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add Figure" Height="420" Width="350"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Figure type selection -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,10">
+            <TextBlock Text="Figure type:" FontWeight="SemiBold"/>
+            <ComboBox x:Name="TypeCombo" SelectedIndex="0" Margin="0,4,0,0"
+                      SelectionChanged="TypeCombo_SelectionChanged"/>
+        </StackPanel>
+
+        <!-- Parameters panel - dynamic based on type -->
+        <GroupBox Grid.Row="1" Header="Parameters" Margin="0,0,0,10">
+            <Grid x:Name="ParamsGrid" Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="X:" VerticalAlignment="Center" Margin="0,2"/>
+                <TextBox x:Name="TxtX" Grid.Row="0" Grid.Column="1" Margin="0,2"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Y:" VerticalAlignment="Center" Margin="0,2"/>
+                <TextBox x:Name="TxtY" Grid.Row="1" Grid.Column="1" Margin="0,2"/>
+
+                <TextBlock x:Name="LblP1" Grid.Row="2" Grid.Column="0" Text="Width:" VerticalAlignment="Center" Margin="0,2"/>
+                <TextBox x:Name="TxtP1" Grid.Row="2" Grid.Column="1" Margin="0,2"/>
+
+                <TextBlock x:Name="LblP2" Grid.Row="3" Grid.Column="0" Text="Height:" VerticalAlignment="Center" Margin="0,2"/>
+                <TextBox x:Name="TxtP2" Grid.Row="3" Grid.Column="1" Margin="0,2"/>
+            </Grid>
+        </GroupBox>
+
+        <!-- Status -->
+        <TextBlock x:Name="StatusText" Grid.Row="2" Foreground="Red" Margin="0,0,0,10" TextWrapping="Wrap"/>
+
+        <!-- Buttons -->
+        <StackPanel Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Add" Width="80" Margin="0,0,10,0" Click="AddButton_Click"/>
+            <Button Content="Cancel" Width="80" IsCancel="True" Click="CancelButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

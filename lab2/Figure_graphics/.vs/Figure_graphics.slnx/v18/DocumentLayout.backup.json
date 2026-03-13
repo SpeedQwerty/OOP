@@ -1,0 +1,196 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figures\\circlefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figures\\circlefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figures\\ellipsefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figures\\ellipsefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figures\\rectanglefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figures\\rectanglefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figures\\linefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figures\\linefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figures\\trianglefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figures\\trianglefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figures\\squarefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figures\\squarefigure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figures\\figurelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figures\\figurelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figures\\base\\figure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figures\\base\\figure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|c:\\files\\semester4\\oop\\lab1\\figure_graphics\\figure_graphics\\figure_graphics.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{54C3748B-D688-4D0C-F0D8-7780C0250049}|Figure_graphics\\Figure_graphics.csproj|solutionrelative:figure_graphics\\figure_graphics.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EllipseFigure.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\EllipseFigure.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figures\\EllipseFigure.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\EllipseFigure.cs",
+              "RelativeToolTip": "Figure_graphics\\Figures\\EllipseFigure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T04:44:42.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RectangleFigure.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\RectangleFigure.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figures\\RectangleFigure.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\RectangleFigure.cs",
+              "RelativeToolTip": "Figure_graphics\\Figures\\RectangleFigure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T04:38:32.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LineFigure.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\LineFigure.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figures\\LineFigure.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\LineFigure.cs",
+              "RelativeToolTip": "Figure_graphics\\Figures\\LineFigure.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T04:25:23.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Figure_graphics\\MainWindow.xaml",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\MainWindow.xaml",
+              "RelativeToolTip": "Figure_graphics\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-24T19:30:12.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Figure_graphics\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwG4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T19:30:09.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CircleFigure.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\CircleFigure.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figures\\CircleFigure.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\CircleFigure.cs",
+              "RelativeToolTip": "Figure_graphics\\Figures\\CircleFigure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T04:24:57.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TriangleFigure.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\TriangleFigure.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figures\\TriangleFigure.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\TriangleFigure.cs",
+              "RelativeToolTip": "Figure_graphics\\Figures\\TriangleFigure.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T04:57:39.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SquareFigure.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\SquareFigure.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figures\\SquareFigure.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\SquareFigure.cs",
+              "RelativeToolTip": "Figure_graphics\\Figures\\SquareFigure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T05:07:36.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FigureList.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\FigureList.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figures\\FigureList.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\FigureList.cs",
+              "RelativeToolTip": "Figure_graphics\\Figures\\FigureList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-25T05:12:11.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Figure.cs",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\Base\\Figure.cs",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figures\\Base\\Figure.cs",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figures\\Base\\Figure.cs",
+              "RelativeToolTip": "Figure_graphics\\Figures\\Base\\Figure.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T19:32:41.332Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Figure_graphics.csproj",
+              "DocumentMoniker": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figure_graphics.csproj",
+              "RelativeDocumentMoniker": "Figure_graphics\\Figure_graphics.csproj",
+              "ToolTip": "C:\\files\\SEMESTER4\\OOP\\lab1\\Figure_graphics\\Figure_graphics\\Figure_graphics.csproj",
+              "RelativeToolTip": "Figure_graphics\\Figure_graphics.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-24T19:31:49.898Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+<Window x:Class="Figure_graphics.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Graphic Editor" Height="700" Width="900"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Toolbar -->
+        <Border Grid.Row="0" Background="#E8E8E8" Padding="8">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Add figure:" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                <Button x:Name="BtnMouse" Content="Mouse" Click="BtnMouse_Click" Padding="10,4" Margin="0,0,4,0"/>
+                <Button x:Name="BtnDialog" Content="Dialog" Click="BtnDialog_Click" Padding="10,4" Margin="0,0,4,0"/>
+                <Button x:Name="BtnScript" Content="Script" Click="BtnScript_Click" Padding="10,4" Margin="0,0,16,0"/>
+                <TextBlock x:Name="MouseHint" Text="" VerticalAlignment="Center" Foreground="Gray" Margin="0,0,8,0"/>
+                <Button Content="Refresh canvas" Click="RefreshCanvas_Click" Padding="10,4" Margin="0,0,4,0"/>
+                <Button Content="Clear all" Click="ClearAll_Click" Padding="10,4" Foreground="DarkRed"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Canvas area -->
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Grid>
+                <Canvas x:Name="DrawingCanvas"
+                        Background="White"
+                        Width="850"
+                        Height="500"
+                        MouseLeftButtonDown="DrawingCanvas_MouseLeftButtonDown"/>
+            </Grid>
+        </ScrollViewer>
+
+        <!-- Script panel -->
+        <Expander x:Name="ScriptExpander" Grid.Row="2" Header="Script input" IsExpanded="False" Margin="8">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock Grid.Row="0" TextWrapping="Wrap" Margin="0,0,0,4">
+                    <Run Text="Enter commands (one per line): line x y x2 y2 | rectangle x y w h | circle x y r | etc."/>
+                </TextBlock>
+                <TextBox x:Name="ScriptTextBox" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap"
+                         VerticalScrollBarVisibility="Auto" FontFamily="Consolas" FontSize="12"/>
+                <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,8,0,0">
+                    <Button Content="Execute script" Click="ExecuteScript_Click" Padding="8,4"/>
+                    <TextBlock x:Name="ScriptStatus" VerticalAlignment="Center" Margin="8,0,0,0" Foreground="Green"/>
+                </StackPanel>
+            </Grid>
+        </Expander>
+    </Grid>
+</Window>
