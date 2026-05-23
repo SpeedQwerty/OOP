@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>MediaCatalog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MediaCatalog.Abstractions\MediaCatalog.Abstractions.csproj" />
+    <ProjectReference Include="..\MediaCatalog.Plugin.Sdk\MediaCatalog.Plugin.Sdk.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Keys\plugin-trust.public.xml" Link="Keys\plugin-trust.public.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <!-- Build, sign, and deploy sample plugins to the host Plugins folder. -->
+  <Target Name="DeploySignedPlugins" AfterTargets="Build">
+    <PropertyGroup>
+      <SignerProject>$(MSBuildThisFileDirectory)..\MediaCatalog.PluginSigner\MediaCatalog.PluginSigner.csproj</SignerProject>
+      <HostPluginsDir>$(TargetDir)Plugins\</HostPluginsDir>
+      <SignerDll>$(MSBuildThisFileDirectory)..\MediaCatalog.PluginSigner\bin\$(Configuration)\net8.0\MediaCatalog.PluginSigner.dll</SignerDll>
+    </PropertyGroup>
+    <MSBuild Projects="$(SignerProject)" Targets="Build" Properties="Configuration=$(Configuration)" />
+    <MakeDir Directories="$(HostPluginsDir)" />
+    <ItemGroup>
+      <_PluginProject Include="$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Podcast\MediaCatalog.Plugin.Podcast.csproj" />
+      <_PluginProject Include="$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Archive.Zip\MediaCatalog.Plugin.Archive.Zip.csproj" />
+      <_PluginProject Include="$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Archive.GZip\MediaCatalog.Plugin.Archive.GZip.csproj" />
+      <_PluginProject Include="$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Archive.Brotli\MediaCatalog.Plugin.Archive.Brotli.csproj" />
+    </ItemGroup>
+    <MSBuild Projects="@(_PluginProject)" Targets="Build" Properties="Configuration=$(Configuration)" />
+    <ItemGroup>
+      <_PluginDll Include="$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Podcast\bin\$(Configuration)\net10.0-windows\MediaCatalog.Plugin.Podcast.dll" />
+      <_PluginDll Include="$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Archive.Zip\bin\$(Configuration)\net10.0-windows\MediaCatalog.Plugin.Archive.Zip.dll" />
+      <_PluginDll Include="$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Archive.GZip\bin\$(Configuration)\net10.0-windows\MediaCatalog.Plugin.Archive.GZip.dll" />
+      <_PluginDll Include="$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Archive.Brotli\bin\$(Configuration)\net10.0-windows\MediaCatalog.Plugin.Archive.Brotli.dll" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_PluginDll)" DestinationFolder="$(HostPluginsDir)" SkipUnchangedFiles="true" />
+    <ItemGroup>
+      <_HostPluginDll Include="$(HostPluginsDir)*.dll" />
+    </ItemGroup>
+    <Exec Command="dotnet &quot;$(SignerDll)&quot; &quot;%(_HostPluginDll.Identity)&quot; 365"
+          WorkingDirectory="$(MSBuildThisFileDirectory).." />
+  </Target>
+
+</Project>
