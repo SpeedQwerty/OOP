@@ -1,0 +1,14 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:models="clr-namespace:MediaCatalog.Plugin.Podcast.Models">
+    <DataTemplate DataType="{x:Type models:Podcast}">
+        <StackPanel>
+            <TextBlock Text="Ведущий" FontWeight="SemiBold"/>
+            <TextBox Text="{Binding Host, UpdateSourceTrigger=PropertyChanged}" Margin="0,2,0,8"/>
+            <TextBlock Text="Количество выпусков" FontWeight="SemiBold"/>
+            <TextBox Text="{Binding EpisodeCount, UpdateSourceTrigger=PropertyChanged}" Margin="0,2,0,8"/>
+            <TextBlock Text="Средняя длительность (мин)" FontWeight="SemiBold"/>
+            <TextBox Text="{Binding AvgEpisodeMinutes, UpdateSourceTrigger=PropertyChanged}" Margin="0,2,0,0"/>
+        </StackPanel>
+    </DataTemplate>
+</ResourceDictionary>

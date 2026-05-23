@@ -1,0 +1,12 @@
+<Solution>
+  <Project Path="MediaCatalog/MediaCatalog.csproj" DefaultStartup="true" />
+  <Project Path="MediaCatalog.Abstractions/MediaCatalog.Abstractions.csproj" />
+  <Project Path="MediaCatalog.Plugin.Sdk/MediaCatalog.Plugin.Sdk.csproj" />
+  <Project Path="FriendPlugin.LegacyPack/FriendPlugin.LegacyPack.csproj" />
+  <Project Path="MediaCatalog.Plugin.Adapter.LegacyPack/MediaCatalog.Plugin.Adapter.LegacyPack.csproj" />
+  <Project Path="MediaCatalog.Plugin.Podcast/MediaCatalog.Plugin.Podcast.csproj" />
+  <Project Path="MediaCatalog.Plugin.Archive.Zip/MediaCatalog.Plugin.Archive.Zip.csproj" />
+  <Project Path="MediaCatalog.Plugin.Archive.GZip/MediaCatalog.Plugin.Archive.GZip.csproj" />
+  <Project Path="MediaCatalog.Plugin.Archive.Brotli/MediaCatalog.Plugin.Archive.Brotli.csproj" />
+  <Project Path="MediaCatalog.PluginSigner/MediaCatalog.PluginSigner.csproj" />
+</Solution>

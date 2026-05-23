@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>MediaCatalog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MediaCatalog.Abstractions\MediaCatalog.Abstractions.csproj" />
+    <ProjectReference Include="..\MediaCatalog.Plugin.Sdk\MediaCatalog.Plugin.Sdk.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Keys\plugin-trust.public.xml" Link="Keys\plugin-trust.public.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <!-- Build sample plugin, sign it, deploy to Plugins folder (no host recompile for new types). -->
+  <Target Name="DeploySignedPodcastPlugin" AfterTargets="Build">
+    <PropertyGroup>
+      <PluginProject>$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Podcast\MediaCatalog.Plugin.Podcast.csproj</PluginProject>
+      <SignerProject>$(MSBuildThisFileDirectory)..\MediaCatalog.PluginSigner\MediaCatalog.PluginSigner.csproj</SignerProject>
+      <PluginOutDir>$(MSBuildThisFileDirectory)..\MediaCatalog.Plugin.Podcast\bin\$(Configuration)\net10.0-windows\</PluginOutDir>
+      <HostPluginsDir>$(TargetDir)Plugins\</HostPluginsDir>
+    </PropertyGroup>
+    <MSBuild Projects="$(PluginProject)" Targets="Build" Properties="Configuration=$(Configuration)" />
+    <MSBuild Projects="$(SignerProject)" Targets="Build" Properties="Configuration=$(Configuration)" />
+    <MakeDir Directories="$(HostPluginsDir)" />
+    <Copy SourceFiles="$(PluginOutDir)MediaCatalog.Plugin.Podcast.dll" DestinationFolder="$(HostPluginsDir)" SkipUnchangedFiles="true" />
+    <Exec Command="dotnet &quot;$(MSBuildThisFileDirectory)..\MediaCatalog.PluginSigner\bin\$(Configuration)\net8.0\MediaCatalog.PluginSigner.dll&quot; &quot;$(HostPluginsDir)MediaCatalog.Plugin.Podcast.dll&quot; 365" WorkingDirectory="$(MSBuildThisFileDirectory).." />
+  </Target>
+
+</Project>
